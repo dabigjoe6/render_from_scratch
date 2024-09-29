@@ -15,10 +15,10 @@ public:
 	Vector2 operator+(const Vector2& other) const;
 	Vector2 operator-(const Vector2& other) const;
 	Vector2 mul(const Vector2& other) const;
+	Vector2 lerp(const Vector2& a, const Vector2& b, float t) const;
 	
 	static float dot(const Vector2& left, const Vector2& right);
 	static float angle(const Vector2& left, const Vector2& right);
-
 	static float distance(const Vector2& a, const Vector2& b);
 
 	void scale(const float s);

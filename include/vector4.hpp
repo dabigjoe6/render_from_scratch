@@ -14,6 +14,7 @@ public:
 	Vector4 operator+(const Vector4& other) const;
 	Vector4 operator-(const Vector4& other) const;
 	Vector4 mul(const Vector4& other) const;
+	Vector4 lerp(const Vector4& a, const Vector4& b, float t) const;
 	
 	static float dot(const Vector4& left, const Vector4& right);
 	static float angle(const Vector4& left, const Vector4& right);

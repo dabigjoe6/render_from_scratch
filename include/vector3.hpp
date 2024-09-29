@@ -14,6 +14,7 @@ public:
 	Vector3 operator+(const Vector3& other) const;
 	Vector3 operator-(const Vector3& other) const;
 	Vector3 mul(const Vector3& other) const;
+	Vector3 lerp(const Vector3& a, const Vector3& b, float t) const;
 
 	static float dot(const Vector3& left, const Vector3& right);
 	static Vector3 cross(const Vector3& left, const Vector3& right);
