@@ -1,6 +1,7 @@
 #ifndef INCLUDE_MATRIX44_HPP
 #define INCLUDE_MATRIX44_HPP
 
+class Vector3;
 class Vector4;
 
 class Matrix44 {
@@ -31,7 +32,9 @@ public:
 	Matrix44& invert();
 	Matrix44& negate();
 
-	
+	Matrix44& scale(const Vector3& scale);
+	Matrix44& rotate(const Vector3& eulerAxis, float angle);
+
 private:
 	float m00, m01, m02, m03;
 	float m10, m11, m12, m13;

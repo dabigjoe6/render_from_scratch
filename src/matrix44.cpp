@@ -1,5 +1,10 @@
+#include <math.h>
+
+#include "../include/vector3.hpp"
 #include "../include/vector4.hpp"
 #include "../include/matrix44.hpp"
+
+
 
 
 #define DET33(t00, t01, t02, t10, t11, t12, t20, t21, t22) (((t00) * ((t11) * (t22) - (t12) * (t21))) + ((t01) * ((t12) * (t20) - (t10) * (t22))) + ((t02) * ((t10) * (t21) - (t11) * (t20))))
@@ -326,4 +331,66 @@ Matrix44& Matrix44::negate() {
 	m33 = -m33;
 
 	return *this;
+}
+
+Matrix44& Matrix44::scale(const Vector3& scale){
+    this->m00 = this->m00 * scale.getX();
+    this->m01 = this->m01 * scale.getX();
+    this->m02 = this->m02 * scale.getX();
+    this->m03 = this->m03 * scale.getX();
+    this->m10 = this->m10 * scale.getY();
+    this->m11 = this->m11 * scale.getY();
+    this->m12 = this->m12 * scale.getY();
+    this->m13 = this->m13 * scale.getY();
+    this->m20 = this->m20 * scale.getZ();
+    this->m21 = this->m21 * scale.getZ();
+    this->m22 = this->m22 * scale.getZ();
+    this->m23 = this->m23 * scale.getZ();
+
+    return *this;
+}
+
+Matrix44& Matrix44::rotate(const Vector3& eulerAxis, float angle){
+    float c = (float) cos(angle);
+    float s = (float) sin(angle);
+    float oneminusc = 1.0f - c;
+    float xy = eulerAxis.getX() * eulerAxis.getY();
+    float yz = eulerAxis.getY() * eulerAxis.getZ();
+    float xz = eulerAxis.getX() * eulerAxis.getZ();
+    float xs = eulerAxis.getX() * s;
+    float ys = eulerAxis.getY() * s;
+    float zs = eulerAxis.getZ() * s;
+
+    float f00 = eulerAxis.getX() * eulerAxis.getX() * oneminusc + c;
+    float f01 = xy * oneminusc + zs;
+    float f02 = xz * oneminusc - ys;
+    float f10 = xy * oneminusc - zs;
+    float f11 = eulerAxis.getY() * eulerAxis.getY() * oneminusc+c;
+    float f12 = yz * oneminusc + xs;
+    float f20 = xz * oneminusc + ys;
+    float f21 = yz * oneminusc - xs;
+    float f22 = eulerAxis.getZ() * eulerAxis.getZ() * oneminusc+c;
+
+    float t00 = this->m00 * f00 + this->m10 * f01 + this->m20 * f02;
+    float t01 = this->m01 * f00 + this->m11 * f01 + this->m21 * f02;
+    float t02 = this->m02 * f00 + this->m12 * f01 + this->m22 * f02;
+    float t03 = this->m03 * f00 + this->m13 * f01 + this->m23 * f02;
+    float t10 = this->m00 * f10 + this->m10 * f11 + this->m20 * f12;
+    float t11 = this->m01 * f10 + this->m11 * f11 + this->m21 * f12;
+    float t12 = this->m02 * f10 + this->m12 * f11 + this->m22 * f12;
+    float t13 = this->m03 * f10 + this->m13 * f11 + this->m23 * f12;
+
+    this->m20 = this->m00 * f20 + this->m10 * f21 + this->m20 * f22;
+    this->m21 = this->m01 * f20 + this->m11 * f21 + this->m21 * f22;
+    this->m22 = this->m02 * f20 + this->m12 * f21 + this->m22 * f22;
+    this->m23 = this->m03 * f20 + this->m13 * f21 + this->m23 * f22;
+    this->m00 = t00;
+    this->m01 = t01;
+    this->m02 = t02;
+    this->m03 = t03;
+    this->m10 = t10;
+    this->m11 = t11;
+    this->m12 = t12;
+    this->m13 = t13;
+    return *this;
 }
