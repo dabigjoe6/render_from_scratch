@@ -1,6 +1,18 @@
 file(REMOVE_RECURSE
   "CMakeFiles/render_engine.dir/src/main.cpp.o"
   "CMakeFiles/render_engine.dir/src/main.cpp.o.d"
+  "CMakeFiles/render_engine.dir/src/matrix22.cpp.o"
+  "CMakeFiles/render_engine.dir/src/matrix22.cpp.o.d"
+  "CMakeFiles/render_engine.dir/src/matrix33.cpp.o"
+  "CMakeFiles/render_engine.dir/src/matrix33.cpp.o.d"
+  "CMakeFiles/render_engine.dir/src/matrix44.cpp.o"
+  "CMakeFiles/render_engine.dir/src/matrix44.cpp.o.d"
+  "CMakeFiles/render_engine.dir/src/vector2.cpp.o"
+  "CMakeFiles/render_engine.dir/src/vector2.cpp.o.d"
+  "CMakeFiles/render_engine.dir/src/vector3.cpp.o"
+  "CMakeFiles/render_engine.dir/src/vector3.cpp.o.d"
+  "CMakeFiles/render_engine.dir/src/vector4.cpp.o"
+  "CMakeFiles/render_engine.dir/src/vector4.cpp.o.d"
   "render_engine"
   "render_engine.pdb"
 )

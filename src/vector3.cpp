@@ -29,6 +29,15 @@ Vector3 Vector3::mul(const Vector3& other) const {
 	return Vector3(this->x * other.x, this->y * other.y, this->z * other.z);
 }
 
+
+Vector3 Vector3::lerp(const Vector3& a, const Vector3& b, float t) const {
+	float x = a.x + ((b.x - a.x) * t);
+	float y = a.y + ((b.y - a.y) * t);
+	float z = a.z + ((b.z - a.z) * t);
+
+	return Vector3(x, y, z);
+}
+
 float Vector3::dot(const Vector3& left, const Vector3& right) {
 	return left.x * right.x + left.y * right.y + left.z * right.z;
 }

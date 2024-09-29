@@ -153,6 +153,150 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/matrix22.o: src/matrix22.cpp.o
+.PHONY : src/matrix22.o
+
+# target to build an object file
+src/matrix22.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/matrix22.cpp.o
+.PHONY : src/matrix22.cpp.o
+
+src/matrix22.i: src/matrix22.cpp.i
+.PHONY : src/matrix22.i
+
+# target to preprocess a source file
+src/matrix22.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/matrix22.cpp.i
+.PHONY : src/matrix22.cpp.i
+
+src/matrix22.s: src/matrix22.cpp.s
+.PHONY : src/matrix22.s
+
+# target to generate assembly for a file
+src/matrix22.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/matrix22.cpp.s
+.PHONY : src/matrix22.cpp.s
+
+src/matrix33.o: src/matrix33.cpp.o
+.PHONY : src/matrix33.o
+
+# target to build an object file
+src/matrix33.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/matrix33.cpp.o
+.PHONY : src/matrix33.cpp.o
+
+src/matrix33.i: src/matrix33.cpp.i
+.PHONY : src/matrix33.i
+
+# target to preprocess a source file
+src/matrix33.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/matrix33.cpp.i
+.PHONY : src/matrix33.cpp.i
+
+src/matrix33.s: src/matrix33.cpp.s
+.PHONY : src/matrix33.s
+
+# target to generate assembly for a file
+src/matrix33.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/matrix33.cpp.s
+.PHONY : src/matrix33.cpp.s
+
+src/matrix44.o: src/matrix44.cpp.o
+.PHONY : src/matrix44.o
+
+# target to build an object file
+src/matrix44.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/matrix44.cpp.o
+.PHONY : src/matrix44.cpp.o
+
+src/matrix44.i: src/matrix44.cpp.i
+.PHONY : src/matrix44.i
+
+# target to preprocess a source file
+src/matrix44.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/matrix44.cpp.i
+.PHONY : src/matrix44.cpp.i
+
+src/matrix44.s: src/matrix44.cpp.s
+.PHONY : src/matrix44.s
+
+# target to generate assembly for a file
+src/matrix44.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/matrix44.cpp.s
+.PHONY : src/matrix44.cpp.s
+
+src/vector2.o: src/vector2.cpp.o
+.PHONY : src/vector2.o
+
+# target to build an object file
+src/vector2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/vector2.cpp.o
+.PHONY : src/vector2.cpp.o
+
+src/vector2.i: src/vector2.cpp.i
+.PHONY : src/vector2.i
+
+# target to preprocess a source file
+src/vector2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/vector2.cpp.i
+.PHONY : src/vector2.cpp.i
+
+src/vector2.s: src/vector2.cpp.s
+.PHONY : src/vector2.s
+
+# target to generate assembly for a file
+src/vector2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/vector2.cpp.s
+.PHONY : src/vector2.cpp.s
+
+src/vector3.o: src/vector3.cpp.o
+.PHONY : src/vector3.o
+
+# target to build an object file
+src/vector3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/vector3.cpp.o
+.PHONY : src/vector3.cpp.o
+
+src/vector3.i: src/vector3.cpp.i
+.PHONY : src/vector3.i
+
+# target to preprocess a source file
+src/vector3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/vector3.cpp.i
+.PHONY : src/vector3.cpp.i
+
+src/vector3.s: src/vector3.cpp.s
+.PHONY : src/vector3.s
+
+# target to generate assembly for a file
+src/vector3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/vector3.cpp.s
+.PHONY : src/vector3.cpp.s
+
+src/vector4.o: src/vector4.cpp.o
+.PHONY : src/vector4.o
+
+# target to build an object file
+src/vector4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/vector4.cpp.o
+.PHONY : src/vector4.cpp.o
+
+src/vector4.i: src/vector4.cpp.i
+.PHONY : src/vector4.i
+
+# target to preprocess a source file
+src/vector4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/vector4.cpp.i
+.PHONY : src/vector4.cpp.i
+
+src/vector4.s: src/vector4.cpp.s
+.PHONY : src/vector4.s
+
+# target to generate assembly for a file
+src/vector4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/vector4.cpp.s
+.PHONY : src/vector4.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +309,24 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/matrix22.o"
+	@echo "... src/matrix22.i"
+	@echo "... src/matrix22.s"
+	@echo "... src/matrix33.o"
+	@echo "... src/matrix33.i"
+	@echo "... src/matrix33.s"
+	@echo "... src/matrix44.o"
+	@echo "... src/matrix44.i"
+	@echo "... src/matrix44.s"
+	@echo "... src/vector2.o"
+	@echo "... src/vector2.i"
+	@echo "... src/vector2.s"
+	@echo "... src/vector3.o"
+	@echo "... src/vector3.i"
+	@echo "... src/vector3.s"
+	@echo "... src/vector4.o"
+	@echo "... src/vector4.i"
+	@echo "... src/vector4.s"
 .PHONY : help
 
 

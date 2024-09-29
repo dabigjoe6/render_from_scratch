@@ -29,6 +29,13 @@ Vector2 Vector2::mul(const Vector2& other) const {
 	return Vector2(this->x * other.x, this->y * other.y);
 }
 
+Vector2 Vector2::lerp(const Vector2& a, const Vector2& b, float t) const {
+	float x = a.x + ((b.x - a.x) * t);
+	float y = a.y + ((b.y - a.y) * t);
+
+	return Vector2(x, y);
+}
+
 float Vector2::dot(const Vector2& left, const Vector2& right) {
 	return left.x * right.x + left.y * right.y;
 }

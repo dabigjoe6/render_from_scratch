@@ -8,5 +8,17 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lncurses")
 
-add_executable(render_engine src/main.cpp
+add_executable(render_engine src/main.cpp 
+	include/vector2.hpp 
+	src/vector2.cpp
+	include/vector3.hpp
+	src/vector3.cpp
+	include/vector4.hpp
+	src/vector4.cpp
+	include/matrix22.hpp
+	src/matrix22.cpp
+	include/matrix33.hpp
+	src/matrix33.cpp
+	include/matrix44.hpp
+	src/matrix44.cpp
 )

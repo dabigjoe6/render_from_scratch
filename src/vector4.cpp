@@ -31,7 +31,15 @@ Vector4 Vector4::mul(const Vector4& other) const {
 	return Vector4(this->x * other.x, this->y * other.y, this->z * other.z, this->w * other.w);
 }
 
-float dot(const Vector4& left, const Vector4& right) {
+Vector4 Vector4::lerp(const Vector4& a, const Vector4& b, float t) const {
+	float x = a.x + ((b.x - a.x) * t);
+	float y = a.y + ((b.y - a.y) * t);
+	float z = a.z + ((b.z - a.z) * t);
+	float w = a.w + ((b.w - a.w) * t);
+	return Vector4(x, y, z, w);
+}
+
+float Vector4::dot(const Vector4& left, const Vector4& right) {
 	return left.getX() * right.getX() + left.getY() * right.getY() + left.getZ() * right.getZ() + left.getW() * right.getW();
 }
 

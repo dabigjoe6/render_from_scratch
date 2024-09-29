@@ -83,17 +83,113 @@ CMakeFiles/render_engine.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/render_engine.dir/src/main.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Documents/c++/render_engine/src/main.cpp -o CMakeFiles/render_engine.dir/src/main.cpp.s
 
+CMakeFiles/render_engine.dir/src/vector2.cpp.o: CMakeFiles/render_engine.dir/flags.make
+CMakeFiles/render_engine.dir/src/vector2.cpp.o: src/vector2.cpp
+CMakeFiles/render_engine.dir/src/vector2.cpp.o: CMakeFiles/render_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Documents/c++/render_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/render_engine.dir/src/vector2.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/render_engine.dir/src/vector2.cpp.o -MF CMakeFiles/render_engine.dir/src/vector2.cpp.o.d -o CMakeFiles/render_engine.dir/src/vector2.cpp.o -c /Users/mac/Documents/c++/render_engine/src/vector2.cpp
+
+CMakeFiles/render_engine.dir/src/vector2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/render_engine.dir/src/vector2.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Documents/c++/render_engine/src/vector2.cpp > CMakeFiles/render_engine.dir/src/vector2.cpp.i
+
+CMakeFiles/render_engine.dir/src/vector2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/render_engine.dir/src/vector2.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Documents/c++/render_engine/src/vector2.cpp -o CMakeFiles/render_engine.dir/src/vector2.cpp.s
+
+CMakeFiles/render_engine.dir/src/vector3.cpp.o: CMakeFiles/render_engine.dir/flags.make
+CMakeFiles/render_engine.dir/src/vector3.cpp.o: src/vector3.cpp
+CMakeFiles/render_engine.dir/src/vector3.cpp.o: CMakeFiles/render_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Documents/c++/render_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/render_engine.dir/src/vector3.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/render_engine.dir/src/vector3.cpp.o -MF CMakeFiles/render_engine.dir/src/vector3.cpp.o.d -o CMakeFiles/render_engine.dir/src/vector3.cpp.o -c /Users/mac/Documents/c++/render_engine/src/vector3.cpp
+
+CMakeFiles/render_engine.dir/src/vector3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/render_engine.dir/src/vector3.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Documents/c++/render_engine/src/vector3.cpp > CMakeFiles/render_engine.dir/src/vector3.cpp.i
+
+CMakeFiles/render_engine.dir/src/vector3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/render_engine.dir/src/vector3.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Documents/c++/render_engine/src/vector3.cpp -o CMakeFiles/render_engine.dir/src/vector3.cpp.s
+
+CMakeFiles/render_engine.dir/src/vector4.cpp.o: CMakeFiles/render_engine.dir/flags.make
+CMakeFiles/render_engine.dir/src/vector4.cpp.o: src/vector4.cpp
+CMakeFiles/render_engine.dir/src/vector4.cpp.o: CMakeFiles/render_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Documents/c++/render_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/render_engine.dir/src/vector4.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/render_engine.dir/src/vector4.cpp.o -MF CMakeFiles/render_engine.dir/src/vector4.cpp.o.d -o CMakeFiles/render_engine.dir/src/vector4.cpp.o -c /Users/mac/Documents/c++/render_engine/src/vector4.cpp
+
+CMakeFiles/render_engine.dir/src/vector4.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/render_engine.dir/src/vector4.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Documents/c++/render_engine/src/vector4.cpp > CMakeFiles/render_engine.dir/src/vector4.cpp.i
+
+CMakeFiles/render_engine.dir/src/vector4.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/render_engine.dir/src/vector4.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Documents/c++/render_engine/src/vector4.cpp -o CMakeFiles/render_engine.dir/src/vector4.cpp.s
+
+CMakeFiles/render_engine.dir/src/matrix22.cpp.o: CMakeFiles/render_engine.dir/flags.make
+CMakeFiles/render_engine.dir/src/matrix22.cpp.o: src/matrix22.cpp
+CMakeFiles/render_engine.dir/src/matrix22.cpp.o: CMakeFiles/render_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Documents/c++/render_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/render_engine.dir/src/matrix22.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/render_engine.dir/src/matrix22.cpp.o -MF CMakeFiles/render_engine.dir/src/matrix22.cpp.o.d -o CMakeFiles/render_engine.dir/src/matrix22.cpp.o -c /Users/mac/Documents/c++/render_engine/src/matrix22.cpp
+
+CMakeFiles/render_engine.dir/src/matrix22.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/render_engine.dir/src/matrix22.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Documents/c++/render_engine/src/matrix22.cpp > CMakeFiles/render_engine.dir/src/matrix22.cpp.i
+
+CMakeFiles/render_engine.dir/src/matrix22.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/render_engine.dir/src/matrix22.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Documents/c++/render_engine/src/matrix22.cpp -o CMakeFiles/render_engine.dir/src/matrix22.cpp.s
+
+CMakeFiles/render_engine.dir/src/matrix33.cpp.o: CMakeFiles/render_engine.dir/flags.make
+CMakeFiles/render_engine.dir/src/matrix33.cpp.o: src/matrix33.cpp
+CMakeFiles/render_engine.dir/src/matrix33.cpp.o: CMakeFiles/render_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Documents/c++/render_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/render_engine.dir/src/matrix33.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/render_engine.dir/src/matrix33.cpp.o -MF CMakeFiles/render_engine.dir/src/matrix33.cpp.o.d -o CMakeFiles/render_engine.dir/src/matrix33.cpp.o -c /Users/mac/Documents/c++/render_engine/src/matrix33.cpp
+
+CMakeFiles/render_engine.dir/src/matrix33.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/render_engine.dir/src/matrix33.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Documents/c++/render_engine/src/matrix33.cpp > CMakeFiles/render_engine.dir/src/matrix33.cpp.i
+
+CMakeFiles/render_engine.dir/src/matrix33.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/render_engine.dir/src/matrix33.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Documents/c++/render_engine/src/matrix33.cpp -o CMakeFiles/render_engine.dir/src/matrix33.cpp.s
+
+CMakeFiles/render_engine.dir/src/matrix44.cpp.o: CMakeFiles/render_engine.dir/flags.make
+CMakeFiles/render_engine.dir/src/matrix44.cpp.o: src/matrix44.cpp
+CMakeFiles/render_engine.dir/src/matrix44.cpp.o: CMakeFiles/render_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Documents/c++/render_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/render_engine.dir/src/matrix44.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/render_engine.dir/src/matrix44.cpp.o -MF CMakeFiles/render_engine.dir/src/matrix44.cpp.o.d -o CMakeFiles/render_engine.dir/src/matrix44.cpp.o -c /Users/mac/Documents/c++/render_engine/src/matrix44.cpp
+
+CMakeFiles/render_engine.dir/src/matrix44.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/render_engine.dir/src/matrix44.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Documents/c++/render_engine/src/matrix44.cpp > CMakeFiles/render_engine.dir/src/matrix44.cpp.i
+
+CMakeFiles/render_engine.dir/src/matrix44.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/render_engine.dir/src/matrix44.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Documents/c++/render_engine/src/matrix44.cpp -o CMakeFiles/render_engine.dir/src/matrix44.cpp.s
+
 # Object files for target render_engine
 render_engine_OBJECTS = \
-"CMakeFiles/render_engine.dir/src/main.cpp.o"
+"CMakeFiles/render_engine.dir/src/main.cpp.o" \
+"CMakeFiles/render_engine.dir/src/vector2.cpp.o" \
+"CMakeFiles/render_engine.dir/src/vector3.cpp.o" \
+"CMakeFiles/render_engine.dir/src/vector4.cpp.o" \
+"CMakeFiles/render_engine.dir/src/matrix22.cpp.o" \
+"CMakeFiles/render_engine.dir/src/matrix33.cpp.o" \
+"CMakeFiles/render_engine.dir/src/matrix44.cpp.o"
 
 # External object files for target render_engine
 render_engine_EXTERNAL_OBJECTS =
 
 render_engine: CMakeFiles/render_engine.dir/src/main.cpp.o
+render_engine: CMakeFiles/render_engine.dir/src/vector2.cpp.o
+render_engine: CMakeFiles/render_engine.dir/src/vector3.cpp.o
+render_engine: CMakeFiles/render_engine.dir/src/vector4.cpp.o
+render_engine: CMakeFiles/render_engine.dir/src/matrix22.cpp.o
+render_engine: CMakeFiles/render_engine.dir/src/matrix33.cpp.o
+render_engine: CMakeFiles/render_engine.dir/src/matrix44.cpp.o
 render_engine: CMakeFiles/render_engine.dir/build.make
 render_engine: CMakeFiles/render_engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mac/Documents/c++/render_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable render_engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mac/Documents/c++/render_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable render_engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/render_engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
