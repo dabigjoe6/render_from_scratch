@@ -394,3 +394,12 @@ Matrix44& Matrix44::rotate(const Vector3& eulerAxis, float angle){
     this->m13 = t13;
     return *this;
 }
+
+Matrix44& Matrix44::translate(const Vector3& vec) {
+    this->m30 += this->m00 * vec.getX() + this->m10 * vec.getY() + this->m20 * vec.getZ();
+    this->m31 += this->m01 * vec.getX() + this->m11 * vec.getY() + this->m21 * vec.getZ();
+    this->m32 += this->m02 * vec.getX() + this->m12 * vec.getY() + this->m22 * vec.getZ();
+    this->m33 += this->m03 * vec.getX() + this->m13 * vec.getY() + this->m23 * vec.getZ();
+
+    return *this;
+}

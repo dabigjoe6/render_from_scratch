@@ -34,6 +34,7 @@ public:
 
 	Matrix44& scale(const Vector3& scale);
 	Matrix44& rotate(const Vector3& eulerAxis, float angle);
+	Matrix44& translate(const Vector3& vec);
 
 private:
 	float m00, m01, m02, m03;
