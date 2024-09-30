@@ -4,10 +4,14 @@
 #include "../include/vector4.hpp"
 #include "../include/matrix44.hpp"
 
-
-
-
 #define DET33(t00, t01, t02, t10, t11, t12, t20, t21, t22) (((t00) * ((t11) * (t22) - (t12) * (t21))) + ((t01) * ((t12) * (t20) - (t10) * (t22))) + ((t02) * ((t10) * (t21) - (t11) * (t20))))
+
+Matrix44::Matrix44()
+    :m00(1), m01(0), m02(0), m03(0),
+    m10(0), m11(1), m12(0), m13(0),
+    m20(0), m21(0), m22(1), m23(0),
+    m30(0), m31(0), m32(0), m33(1)
+{}  
 
 Matrix44::Matrix44(
 	float m00, float m01, float m02, float m03,
@@ -146,7 +150,15 @@ Matrix44 Matrix44::mul(const Matrix44& m) const {
 	);
 }
 
-Vector4 Matrix44::trans(Matrix44& matrix, Vector4 vector) {
+Matrix44 Matrix44::operator*(const Matrix44& m) const {
+	return this->mul(m);
+}
+
+Vector4 Matrix44::operator*(const Vector4& v) const {
+	return this->trans(*this, v);
+}
+
+Vector4 Matrix44::trans(const Matrix44& matrix, const Vector4& vector) const {
 	float x = this->m00 * vector.getX() + this->m10 * vector.getY() + this->m20 * vector.getZ() + this->m30 * vector.getW();
 	float y = this->m01 * vector.getX() + this->m11 * vector.getY() + this->m21 * vector.getZ() + this->m31 * vector.getW();
 	float z = this->m02 * vector.getX() + this->m12 * vector.getY() + this->m22 * vector.getZ() + this->m32 * vector.getW();

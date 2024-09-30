@@ -1,6 +1,12 @@
 #include "../include/vector3.hpp"
 #include "../include/matrix33.hpp"
 
+Matrix33::Matrix33()
+    :m00(1), m01(0), m02(0),
+    m10(0), m11(1), m12(0),
+    m20(0), m21(0), m22(1)
+{}
+
 Matrix33::Matrix33(
 	float m00, float m01, float m02, 
 	float m10, float m11, float m12,

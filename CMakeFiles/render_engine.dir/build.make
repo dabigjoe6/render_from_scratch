@@ -167,6 +167,34 @@ CMakeFiles/render_engine.dir/src/matrix44.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/render_engine.dir/src/matrix44.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Documents/c++/render_engine/src/matrix44.cpp -o CMakeFiles/render_engine.dir/src/matrix44.cpp.s
 
+CMakeFiles/render_engine.dir/src/quaternion.cpp.o: CMakeFiles/render_engine.dir/flags.make
+CMakeFiles/render_engine.dir/src/quaternion.cpp.o: src/quaternion.cpp
+CMakeFiles/render_engine.dir/src/quaternion.cpp.o: CMakeFiles/render_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Documents/c++/render_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/render_engine.dir/src/quaternion.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/render_engine.dir/src/quaternion.cpp.o -MF CMakeFiles/render_engine.dir/src/quaternion.cpp.o.d -o CMakeFiles/render_engine.dir/src/quaternion.cpp.o -c /Users/mac/Documents/c++/render_engine/src/quaternion.cpp
+
+CMakeFiles/render_engine.dir/src/quaternion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/render_engine.dir/src/quaternion.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Documents/c++/render_engine/src/quaternion.cpp > CMakeFiles/render_engine.dir/src/quaternion.cpp.i
+
+CMakeFiles/render_engine.dir/src/quaternion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/render_engine.dir/src/quaternion.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Documents/c++/render_engine/src/quaternion.cpp -o CMakeFiles/render_engine.dir/src/quaternion.cpp.s
+
+CMakeFiles/render_engine.dir/src/genmath.cpp.o: CMakeFiles/render_engine.dir/flags.make
+CMakeFiles/render_engine.dir/src/genmath.cpp.o: src/genmath.cpp
+CMakeFiles/render_engine.dir/src/genmath.cpp.o: CMakeFiles/render_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Documents/c++/render_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/render_engine.dir/src/genmath.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/render_engine.dir/src/genmath.cpp.o -MF CMakeFiles/render_engine.dir/src/genmath.cpp.o.d -o CMakeFiles/render_engine.dir/src/genmath.cpp.o -c /Users/mac/Documents/c++/render_engine/src/genmath.cpp
+
+CMakeFiles/render_engine.dir/src/genmath.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/render_engine.dir/src/genmath.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Documents/c++/render_engine/src/genmath.cpp > CMakeFiles/render_engine.dir/src/genmath.cpp.i
+
+CMakeFiles/render_engine.dir/src/genmath.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/render_engine.dir/src/genmath.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Documents/c++/render_engine/src/genmath.cpp -o CMakeFiles/render_engine.dir/src/genmath.cpp.s
+
 # Object files for target render_engine
 render_engine_OBJECTS = \
 "CMakeFiles/render_engine.dir/src/main.cpp.o" \
@@ -175,7 +203,9 @@ render_engine_OBJECTS = \
 "CMakeFiles/render_engine.dir/src/vector4.cpp.o" \
 "CMakeFiles/render_engine.dir/src/matrix22.cpp.o" \
 "CMakeFiles/render_engine.dir/src/matrix33.cpp.o" \
-"CMakeFiles/render_engine.dir/src/matrix44.cpp.o"
+"CMakeFiles/render_engine.dir/src/matrix44.cpp.o" \
+"CMakeFiles/render_engine.dir/src/quaternion.cpp.o" \
+"CMakeFiles/render_engine.dir/src/genmath.cpp.o"
 
 # External object files for target render_engine
 render_engine_EXTERNAL_OBJECTS =
@@ -187,9 +217,11 @@ render_engine: CMakeFiles/render_engine.dir/src/vector4.cpp.o
 render_engine: CMakeFiles/render_engine.dir/src/matrix22.cpp.o
 render_engine: CMakeFiles/render_engine.dir/src/matrix33.cpp.o
 render_engine: CMakeFiles/render_engine.dir/src/matrix44.cpp.o
+render_engine: CMakeFiles/render_engine.dir/src/quaternion.cpp.o
+render_engine: CMakeFiles/render_engine.dir/src/genmath.cpp.o
 render_engine: CMakeFiles/render_engine.dir/build.make
 render_engine: CMakeFiles/render_engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mac/Documents/c++/render_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable render_engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mac/Documents/c++/render_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable render_engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/render_engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

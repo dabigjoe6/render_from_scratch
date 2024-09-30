@@ -6,6 +6,8 @@ class Vector4;
 
 class Matrix44 {
 public:
+	Matrix44();
+
 	Matrix44(
 		float m00, float m01, float m02, float m03,
 		float m10, float m11, float m12, float m13,
@@ -18,9 +20,12 @@ public:
 	Matrix44& operator=(const Matrix44&  m);
 	Matrix44 operator+(const Matrix44& other) const;
 	Matrix44 operator-(const Matrix44& other) const;
+	
+	Matrix44 operator*(const Matrix44& other) const;
+	Vector4 operator*(const Vector4& other) const;
 
 	Matrix44 mul(const Matrix44& other) const;
-	Vector4 trans(Matrix44& matrix, Vector4 vector);
+	Vector4 trans(const Matrix44& matrix, const Vector4& vector) const;
 	
 	Matrix44& transpose();
 	
@@ -36,7 +41,6 @@ public:
 	Matrix44& rotate(const Vector3& eulerAxis, float angle);
 	Matrix44& translate(const Vector3& vec);
 
-private:
 	float m00, m01, m02, m03;
 	float m10, m11, m12, m13;
 	float m20, m21, m22, m23;

@@ -129,6 +129,30 @@ render_engine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/build
 .PHONY : render_engine/fast
 
+src/genmath.o: src/genmath.cpp.o
+.PHONY : src/genmath.o
+
+# target to build an object file
+src/genmath.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/genmath.cpp.o
+.PHONY : src/genmath.cpp.o
+
+src/genmath.i: src/genmath.cpp.i
+.PHONY : src/genmath.i
+
+# target to preprocess a source file
+src/genmath.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/genmath.cpp.i
+.PHONY : src/genmath.cpp.i
+
+src/genmath.s: src/genmath.cpp.s
+.PHONY : src/genmath.s
+
+# target to generate assembly for a file
+src/genmath.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/genmath.cpp.s
+.PHONY : src/genmath.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -225,6 +249,30 @@ src/matrix44.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/matrix44.cpp.s
 .PHONY : src/matrix44.cpp.s
 
+src/quaternion.o: src/quaternion.cpp.o
+.PHONY : src/quaternion.o
+
+# target to build an object file
+src/quaternion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/quaternion.cpp.o
+.PHONY : src/quaternion.cpp.o
+
+src/quaternion.i: src/quaternion.cpp.i
+.PHONY : src/quaternion.i
+
+# target to preprocess a source file
+src/quaternion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/quaternion.cpp.i
+.PHONY : src/quaternion.cpp.i
+
+src/quaternion.s: src/quaternion.cpp.s
+.PHONY : src/quaternion.s
+
+# target to generate assembly for a file
+src/quaternion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/quaternion.cpp.s
+.PHONY : src/quaternion.cpp.s
+
 src/vector2.o: src/vector2.cpp.o
 .PHONY : src/vector2.o
 
@@ -306,6 +354,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... render_engine"
+	@echo "... src/genmath.o"
+	@echo "... src/genmath.i"
+	@echo "... src/genmath.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -318,6 +369,9 @@ help:
 	@echo "... src/matrix44.o"
 	@echo "... src/matrix44.i"
 	@echo "... src/matrix44.s"
+	@echo "... src/quaternion.o"
+	@echo "... src/quaternion.i"
+	@echo "... src/quaternion.s"
 	@echo "... src/vector2.o"
 	@echo "... src/vector2.i"
 	@echo "... src/vector2.s"

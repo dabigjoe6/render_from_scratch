@@ -5,6 +5,8 @@ class Vector3;
 
 class Matrix33 {
 public:
+	Matrix33();
+
 	Matrix33(
 		float m00, float m01, float m02, 
 		float m10, float m11, float m12,
@@ -30,8 +32,6 @@ public:
 	Matrix33& invert();
 	Matrix33& negate();
 
-	
-private:
 	float m00, m01, m02;
 	float m10, m11, m12;
 	float m20, m21, m22;

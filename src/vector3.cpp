@@ -1,6 +1,8 @@
 #include <math.h>
 #include "../include/vector3.hpp"
 
+
+
 Vector3::Vector3(float x, float y, float z): x(x), y(y), z(z) {}
 Vector3::Vector3(const Vector3& copy): x(copy.getX()), y(copy.getY()), z(copy.getZ()) {}
 
@@ -89,3 +91,8 @@ float Vector3::getZ() const { return z; }
 void Vector3::setX(float x) { this->x = x; }
 void Vector3::setY(float y) { this->y = y; }
 void Vector3::setZ(float z) { this->z = z; }
+
+Vector3 Vector3::operator%(const Vector3& right) const{
+    Vector3 ret = Vector3::cross(*this, right);
+    return ret;
+}

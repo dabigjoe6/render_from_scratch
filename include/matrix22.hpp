@@ -5,6 +5,8 @@ class Vector2;
 
 class Matrix22 {
 public:
+	Matrix22();
+
 	Matrix22(
 		float m00, float m01, 
 		float m10, float m11);
@@ -28,10 +30,7 @@ public:
 	Matrix22& invert();
 	Matrix22& negate();
 
-	
-private:
 	float m00, m01;
 	float m10, m11;
-
 };
 #endif

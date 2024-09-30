@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/render_engine.dir/src/genmath.cpp.o"
+  "CMakeFiles/render_engine.dir/src/genmath.cpp.o.d"
   "CMakeFiles/render_engine.dir/src/main.cpp.o"
   "CMakeFiles/render_engine.dir/src/main.cpp.o.d"
   "CMakeFiles/render_engine.dir/src/matrix22.cpp.o"
@@ -7,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/render_engine.dir/src/matrix33.cpp.o.d"
   "CMakeFiles/render_engine.dir/src/matrix44.cpp.o"
   "CMakeFiles/render_engine.dir/src/matrix44.cpp.o.d"
+  "CMakeFiles/render_engine.dir/src/quaternion.cpp.o"
+  "CMakeFiles/render_engine.dir/src/quaternion.cpp.o.d"
   "CMakeFiles/render_engine.dir/src/vector2.cpp.o"
   "CMakeFiles/render_engine.dir/src/vector2.cpp.o.d"
   "CMakeFiles/render_engine.dir/src/vector3.cpp.o"

@@ -21,4 +21,9 @@ add_executable(render_engine src/main.cpp
 	src/matrix33.cpp
 	include/matrix44.hpp
 	src/matrix44.cpp
+	include/quaternion.hpp
+	src/quaternion.cpp
+	include/genmath.hpp
+	src/genmath.cpp
+	include/defs.hpp
 )

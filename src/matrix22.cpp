@@ -1,6 +1,12 @@
 #include "../include/vector2.hpp"
 #include "../include/matrix22.hpp"
 
+
+Matrix22::Matrix22() 
+    :m00(1), m01(0), 
+    m10(0), m11(1)
+{}
+
 Matrix22::Matrix22(float m00, float m01, float m10, float m11): m00(m00), m01(m01), m10(m10), m11(m11) {}
 
 Matrix22::Matrix22(const Matrix22& m): m00(m.m00), m01(m.m01), m10(m.m10), m11(m.m11) {}
