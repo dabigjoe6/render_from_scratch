@@ -273,6 +273,30 @@ src/quaternion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/quaternion.cpp.s
 .PHONY : src/quaternion.cpp.s
 
+src/rasterizer.o: src/rasterizer.cpp.o
+.PHONY : src/rasterizer.o
+
+# target to build an object file
+src/rasterizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/rasterizer.cpp.o
+.PHONY : src/rasterizer.cpp.o
+
+src/rasterizer.i: src/rasterizer.cpp.i
+.PHONY : src/rasterizer.i
+
+# target to preprocess a source file
+src/rasterizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/rasterizer.cpp.i
+.PHONY : src/rasterizer.cpp.i
+
+src/rasterizer.s: src/rasterizer.cpp.s
+.PHONY : src/rasterizer.s
+
+# target to generate assembly for a file
+src/rasterizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/rasterizer.cpp.s
+.PHONY : src/rasterizer.cpp.s
+
 src/vector2.o: src/vector2.cpp.o
 .PHONY : src/vector2.o
 
@@ -372,6 +396,9 @@ help:
 	@echo "... src/quaternion.o"
 	@echo "... src/quaternion.i"
 	@echo "... src/quaternion.s"
+	@echo "... src/rasterizer.o"
+	@echo "... src/rasterizer.i"
+	@echo "... src/rasterizer.s"
 	@echo "... src/vector2.o"
 	@echo "... src/vector2.i"
 	@echo "... src/vector2.s"

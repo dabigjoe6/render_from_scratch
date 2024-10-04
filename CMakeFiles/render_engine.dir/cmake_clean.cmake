@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/render_engine.dir/src/matrix44.cpp.o.d"
   "CMakeFiles/render_engine.dir/src/quaternion.cpp.o"
   "CMakeFiles/render_engine.dir/src/quaternion.cpp.o.d"
+  "CMakeFiles/render_engine.dir/src/rasterizer.cpp.o"
+  "CMakeFiles/render_engine.dir/src/rasterizer.cpp.o.d"
   "CMakeFiles/render_engine.dir/src/vector2.cpp.o"
   "CMakeFiles/render_engine.dir/src/vector2.cpp.o.d"
   "CMakeFiles/render_engine.dir/src/vector3.cpp.o"

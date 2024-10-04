@@ -1,5 +1,8 @@
-CMakeFiles/render_engine.dir/src/quaternion.cpp.o: \
-  /Users/mac/Documents/c++/render_engine/src/quaternion.cpp \
+CMakeFiles/render_engine.dir/src/rasterizer.cpp.o: \
+  /Users/mac/Documents/c++/render_engine/src/rasterizer.cpp \
+  /Users/mac/Documents/c++/render_engine/src/../include/rasterizer.hpp \
+  /Users/mac/Documents/c++/render_engine/src/../include/vector2.hpp \
+  /Users/mac/Documents/c++/render_engine/src/../include/vector3.hpp \
   /Users/mac/Documents/c++/render_engine/src/../include/defs.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/ncurses.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/ncurses_dll.h \
@@ -60,10 +63,6 @@ CMakeFiles/render_engine.dir/src/quaternion.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stdarg_va_copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/unctrl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/curses.h \
-  /Users/mac/Documents/c++/render_engine/src/../include/quaternion.hpp \
-  /Users/mac/Documents/c++/render_engine/src/../include/vector3.hpp \
-  /Users/mac/Documents/c++/render_engine/src/../include/vector4.hpp \
-  /Users/mac/Documents/c++/render_engine/src/../include/matrix44.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/math.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__math/abs.h \

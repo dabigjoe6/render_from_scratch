@@ -26,4 +26,6 @@ add_executable(render_engine src/main.cpp
 	include/genmath.hpp
 	src/genmath.cpp
 	include/defs.hpp
+	include/rasterizer.hpp
+	src/rasterizer.cpp
 )
