@@ -202,6 +202,7 @@ CMakeFiles/render_engine.dir/src/main.cpp.o: src/main.cpp \
   include/matrix44.hpp \
   include/rasterizer.hpp \
   include/vector2.hpp \
+  include/vector3.hpp \
   include/vector4.hpp
 
 CMakeFiles/render_engine.dir/src/matrix22.cpp.o: src/matrix22.cpp \

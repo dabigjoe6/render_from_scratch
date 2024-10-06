@@ -3,7 +3,7 @@
 #include "../include/rasterizer.hpp"
 #include "../include/matrix44.hpp"
 #include "../include/vector4.hpp"
-//#include "../include/vector3.hpp"
+#include "../include/vector3.hpp"
 #include "../include/vector2.hpp"
 //#include "../include/genmath.hpp"
 
@@ -11,32 +11,37 @@
 
 int main(int argc, char** argv) {
 	initscr();
-	raw();
 	noecho();
 	refresh();
 	curs_set(0);
+	cbreak();
 
 	Rasterizer rasterizer(WW, WH);
 
-//	float angle = 0;
+	float angle = 0;
 
-	Matrix44 transformation;
-//	transformation.scale(Vector3(5, 1, 1));
-//	transformation.translate(Vector3(10, 0, 20));
+	while (true) {
+		angle += 0.002f;
 
-	//transformation.rotate(Vector3(0, 0, 1), GenMath::toRadians(angle));
+		Matrix44 transformation;
+		transformation.rotate(Vector3(1, 0, 0), angle);
 
-	Vector4 v1 = Vector4(-1, 1, 0, 1);
-	Vector4 v2 = Vector4(1, 1, 0, 1);
-	Vector4 v3 = Vector4(0, -1, 0, 1);
+		Vector4 v1 = Vector4(-1, 1, 0, 1);
+		Vector4 v2 = Vector4(1, 1, 0, 1);
+		Vector4 v3 = Vector4(0, -1, 0, 1);
 
-	v1 = transformation * v1;
-	v2 = transformation * v2;
-	v3 = transformation * v3;
+		v1 = transformation * v1;
+		v2 = transformation * v2;
+		v3 = transformation * v3;
 
-	rasterizer.clearFrame();	
-	rasterizer.rasterizeTriangle(Vector2(v1.x, v1.y), Vector2(v2.x, v2.y), Vector2(v3.x, v3.y));
-	rasterizer.presentFrame(0, 0);
+		rasterizer.clearFrame();	
+		rasterizer.rasterizeTriangle(Vector2(v1.x, v1.y), Vector2(v2.x, v2.y), Vector2(v3.x, v3.y));
+		rasterizer.presentFrame();
+		rasterizer.swapFramebuffers();
+
+		refresh();
+		erase();
+	}
 	
 	getch();
 	clear();

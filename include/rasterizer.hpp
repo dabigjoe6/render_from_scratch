@@ -10,12 +10,18 @@ public:
 	~Rasterizer();
 
 	void rasterizeTriangle(const Vector2& v1, const Vector2& v2, const Vector2& v3);
-	inline Framebuffer* getFramebuffer() const { return fb; }
 	
 	void clearFrame() const;
-	void presentFrame(int x, int y);
+	void presentFrame();
+
+	void swapFramebuffers();
 private:
-	Framebuffer* fb;
+	Framebuffer* rFrame; // render frame
+	Framebuffer* pFrame; // present frame
+	Framebuffer* framebuffers[2];
+
+	int currentFramebuffer;
+
 	void initializeFramebuffer(int width, int height);
 };
 #endif

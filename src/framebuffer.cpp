@@ -38,9 +38,9 @@ depthbuffer_t Framebuffer::getDepth(int x, int y) {
 	return depthbuffer[index];
 }
 
-void Framebuffer::print(int offsetx, int offsety) {
-	for (int i = offsety; i < height; i++) {
-		for (int j = offsetx; j < width; j++) {
+void Framebuffer::print() {
+	for (int i = 0; i < height; i++) {
+		for (int j = 0; j < width; j++) {
 			int index = (i * width) + j;
 			
 			if (!colorbuffer[index]) continue;

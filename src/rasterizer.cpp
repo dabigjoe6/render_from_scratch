@@ -28,25 +28,37 @@ inline static bool isPointInTriangle(Vector3& barryCentric) {
 }
 
 void Rasterizer::initializeFramebuffer(int width, int height) {
-	fb = new Framebuffer(width, height);
+	framebuffers[0] = new Framebuffer(width, height);
+	framebuffers[1] = new Framebuffer(width, height);
+
+	swapFramebuffers();
 }
 
-Rasterizer::Rasterizer(int width, int height): fb(nullptr) {
+void Rasterizer::swapFramebuffers() {
+	currentFramebuffer ^= 1;
+	rFrame = framebuffers[currentFramebuffer ^ 1];
+	pFrame = framebuffers[currentFramebuffer];
+}
+
+Rasterizer::Rasterizer(int width, int height): rFrame(nullptr), pFrame(nullptr), currentFramebuffer(0) {
 	initializeFramebuffer(width, height);
 }
 
 Rasterizer::~Rasterizer() {
-	delete fb;
+	delete rFrame;
+	delete pFrame;
 }
 
 void Rasterizer::rasterizeTriangle(const Vector2& vv1, const Vector2& vv2, const Vector2& vv3) {
+	Framebuffer* fb = rFrame;
+
 	int h_width = fb->getWidth() / 2, h_height = fb->getHeight() / 2;	
 	int minx, maxx;
 	int miny, maxy;
 
-	Vector2 v1 = Vector2(vv1.x * h_width + h_width, vv1.y * h_height + h_height);
-	Vector2 v2 = Vector2(vv2.x * h_width + h_width, vv2.y * h_height + h_height);
-	Vector2 v3 = Vector2(vv3.x * h_width + h_width, vv3.y * h_height + h_height);
+	Vector2 v1 = Vector2(vv1.x * h_width + h_width, -vv1.y * h_height + h_height);
+	Vector2 v2 = Vector2(vv2.x * h_width + h_width, -vv2.y * h_height + h_height);
+	Vector2 v3 = Vector2(vv3.x * h_width + h_width, -vv3.y * h_height + h_height);
 
 	minx = MAX(0, MIN(v1.x, MIN(v2.x, v3.x)));
 	miny = MAX(0, MIN(v1.y, MIN(v2.y, v3.y)));
@@ -67,9 +79,9 @@ void Rasterizer::rasterizeTriangle(const Vector2& vv1, const Vector2& vv2, const
 }
 
 void Rasterizer::clearFrame() const {
-	fb->clear(0);
+	rFrame->clear(0);
 }
 
-void Rasterizer::presentFrame(int x, int y) {
-	fb->print(x, y);
+void Rasterizer::presentFrame() {
+	pFrame->print();
 }
