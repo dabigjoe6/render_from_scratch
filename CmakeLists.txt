@@ -28,4 +28,6 @@ add_executable(render_engine src/main.cpp
 	include/defs.hpp
 	include/rasterizer.hpp
 	src/rasterizer.cpp
+	include/framebuffer.hpp
+	src/framebuffer.cpp
 )

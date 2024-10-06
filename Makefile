@@ -129,6 +129,30 @@ render_engine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/build
 .PHONY : render_engine/fast
 
+src/framebuffer.o: src/framebuffer.cpp.o
+.PHONY : src/framebuffer.o
+
+# target to build an object file
+src/framebuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/framebuffer.cpp.o
+.PHONY : src/framebuffer.cpp.o
+
+src/framebuffer.i: src/framebuffer.cpp.i
+.PHONY : src/framebuffer.i
+
+# target to preprocess a source file
+src/framebuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/framebuffer.cpp.i
+.PHONY : src/framebuffer.cpp.i
+
+src/framebuffer.s: src/framebuffer.cpp.s
+.PHONY : src/framebuffer.s
+
+# target to generate assembly for a file
+src/framebuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/framebuffer.cpp.s
+.PHONY : src/framebuffer.cpp.s
+
 src/genmath.o: src/genmath.cpp.o
 .PHONY : src/genmath.o
 
@@ -378,6 +402,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... render_engine"
+	@echo "... src/framebuffer.o"
+	@echo "... src/framebuffer.i"
+	@echo "... src/framebuffer.s"
 	@echo "... src/genmath.o"
 	@echo "... src/genmath.i"
 	@echo "... src/genmath.s"

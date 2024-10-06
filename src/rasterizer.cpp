@@ -2,6 +2,7 @@
 #include "../include/vector2.hpp"
 #include "../include/vector3.hpp"
 #include "../include/defs.hpp"
+#include "../include/framebuffer.hpp"
 
 #include <math.h>
 #include <ncurses.h>
@@ -26,12 +27,12 @@ inline static bool isPointInTriangle(Vector3& barryCentric) {
 	return ((one == two) && (two == three));
 }
 
-void Rasterizer::initializeFrameBuffer(int width, int height) {
-	fb = new FrameBuffer(width, height);
+void Rasterizer::initializeFramebuffer(int width, int height) {
+	fb = new Framebuffer(width, height);
 }
 
 Rasterizer::Rasterizer(int width, int height): fb(nullptr) {
-	initializeFrameBuffer(width, height);
+	initializeFramebuffer(width, height);
 }
 
 Rasterizer::~Rasterizer() {
@@ -45,17 +46,25 @@ void Rasterizer::rasterizeTriangle(const Vector2& v1, const Vector2& v2, const V
 	minx = MAX(0, MIN(v1.x, MIN(v2.x, v3.x)));
 	miny = MAX(0, MIN(v1.y, MIN(v2.y, v3.y)));
 
-	maxx = MIN(fb->width, ceil(MAX(v1.x, MAX(v2.x, v3.x)) + 1));
-	maxy = MIN(fb->height, ceil(MAX(v1.y, MAX(v2.y, v3.y)) + 1));
+	maxx = MIN(fb->getWidth(), ceil(MAX(v1.x, MAX(v2.x, v3.x)) + 1));
+	maxy = MIN(fb->getHeight(), ceil(MAX(v1.y, MAX(v2.y, v3.y)) + 1));
 
 	for (int j = miny; j < maxy; ++j) {
 		for (int i = minx; i < maxx; ++i) {
 			Vector3 barryCentric = getBarryCentricCoordinates(i, j, v1, v2, v3);
 			if (isPointInTriangle(barryCentric)) {
-				mvprintw(j, i, "#");
+				fb->setPixel(i, j, '#', 0);
 			} else {
-					mvprintw(j, i, ".");
+				fb->setPixel(i, j, '.', 0);
 			}
 		}
 	}
+}
+
+void Rasterizer::clearFrame() const {
+	fb->clear(0);
+}
+
+void Rasterizer::presentFrame(int x, int y) {
+	fb->print(x, y);
 }

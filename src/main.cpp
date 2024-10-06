@@ -34,11 +34,15 @@ int main(int argc, char** argv) {
 	v2 = transformation * v2;
 	v3 = transformation * v3;
 
+	rasterizer.clearFrame();	
 	rasterizer.rasterizeTriangle(Vector2(v1.x, v1.y), Vector2(v2.x, v2.y), Vector2(v3.x, v3.y));
+	rasterizer.presentFrame(0, 0);
 	
 	getch();
 	clear();
 	refresh();
+
+	endwin();
 
 	return 0;
 }

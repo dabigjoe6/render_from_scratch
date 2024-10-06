@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/render_engine.dir/src/framebuffer.cpp.o"
+  "CMakeFiles/render_engine.dir/src/framebuffer.cpp.o.d"
   "CMakeFiles/render_engine.dir/src/genmath.cpp.o"
   "CMakeFiles/render_engine.dir/src/genmath.cpp.o.d"
   "CMakeFiles/render_engine.dir/src/main.cpp.o"
