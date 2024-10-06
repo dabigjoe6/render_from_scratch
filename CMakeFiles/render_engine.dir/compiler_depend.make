@@ -199,11 +199,9 @@ CMakeFiles/render_engine.dir/src/main.cpp.o: src/main.cpp \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stdint.h \
   include/defs.hpp \
-  include/genmath.hpp \
   include/matrix44.hpp \
   include/rasterizer.hpp \
   include/vector2.hpp \
-  include/vector3.hpp \
   include/vector4.hpp
 
 CMakeFiles/render_engine.dir/src/matrix22.cpp.o: src/matrix22.cpp \

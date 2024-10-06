@@ -39,10 +39,15 @@ Rasterizer::~Rasterizer() {
 	delete fb;
 }
 
-void Rasterizer::rasterizeTriangle(const Vector2& v1, const Vector2& v2, const Vector2& v3) {
+void Rasterizer::rasterizeTriangle(const Vector2& vv1, const Vector2& vv2, const Vector2& vv3) {
+	int h_width = fb->getWidth() / 2, h_height = fb->getHeight() / 2;	
 	int minx, maxx;
 	int miny, maxy;
-	
+
+	Vector2 v1 = Vector2(vv1.x * h_width + h_width, vv1.y * h_height + h_height);
+	Vector2 v2 = Vector2(vv2.x * h_width + h_width, vv2.y * h_height + h_height);
+	Vector2 v3 = Vector2(vv3.x * h_width + h_width, vv3.y * h_height + h_height);
+
 	minx = MAX(0, MIN(v1.x, MIN(v2.x, v3.x)));
 	miny = MAX(0, MIN(v1.y, MIN(v2.y, v3.y)));
 

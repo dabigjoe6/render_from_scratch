@@ -62,7 +62,5 @@ CMakeFiles/render_engine.dir/src/main.cpp.o: \
   /Users/mac/Documents/c++/render_engine/src/../include/rasterizer.hpp \
   /Users/mac/Documents/c++/render_engine/src/../include/matrix44.hpp \
   /Users/mac/Documents/c++/render_engine/src/../include/vector4.hpp \
-  /Users/mac/Documents/c++/render_engine/src/../include/vector3.hpp \
   /Users/mac/Documents/c++/render_engine/src/../include/vector2.hpp \
-  /Users/mac/Documents/c++/render_engine/src/../include/genmath.hpp \
   /Users/mac/Documents/c++/render_engine/src/../include/defs.hpp
