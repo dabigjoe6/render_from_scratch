@@ -60,5 +60,9 @@ CMakeFiles/render_engine.dir/src/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/unctrl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/curses.h \
   /Users/mac/Documents/c++/render_engine/src/../include/rasterizer.hpp \
+  /Users/mac/Documents/c++/render_engine/src/../include/matrix44.hpp \
+  /Users/mac/Documents/c++/render_engine/src/../include/vector4.hpp \
+  /Users/mac/Documents/c++/render_engine/src/../include/vector3.hpp \
   /Users/mac/Documents/c++/render_engine/src/../include/vector2.hpp \
+  /Users/mac/Documents/c++/render_engine/src/../include/genmath.hpp \
   /Users/mac/Documents/c++/render_engine/src/../include/defs.hpp
