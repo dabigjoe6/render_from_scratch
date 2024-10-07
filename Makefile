@@ -129,6 +129,30 @@ render_engine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/build
 .PHONY : render_engine/fast
 
+src/camera.o: src/camera.cpp.o
+.PHONY : src/camera.o
+
+# target to build an object file
+src/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/camera.cpp.o
+.PHONY : src/camera.cpp.o
+
+src/camera.i: src/camera.cpp.i
+.PHONY : src/camera.i
+
+# target to preprocess a source file
+src/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/camera.cpp.i
+.PHONY : src/camera.cpp.i
+
+src/camera.s: src/camera.cpp.s
+.PHONY : src/camera.s
+
+# target to generate assembly for a file
+src/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render_engine.dir/build.make CMakeFiles/render_engine.dir/src/camera.cpp.s
+.PHONY : src/camera.cpp.s
+
 src/framebuffer.o: src/framebuffer.cpp.o
 .PHONY : src/framebuffer.o
 
@@ -402,6 +426,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... render_engine"
+	@echo "... src/camera.o"
+	@echo "... src/camera.i"
+	@echo "... src/camera.s"
 	@echo "... src/framebuffer.o"
 	@echo "... src/framebuffer.i"
 	@echo "... src/framebuffer.s"

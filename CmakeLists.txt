@@ -30,4 +30,6 @@ add_executable(render_engine src/main.cpp
 	src/rasterizer.cpp
 	include/framebuffer.hpp
 	src/framebuffer.cpp
+	include/camera.hpp
+	src/camera.cpp
 )
