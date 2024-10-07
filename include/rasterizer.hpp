@@ -15,10 +15,15 @@ public:
 	void presentFrame();
 
 	void swapFramebuffers();
+
+	void setRenderCb(bool(*renderCb)());
+
 private:
 	Framebuffer* rFrame; // render frame
 	Framebuffer* pFrame; // present frame
 	Framebuffer* framebuffers[2];
+
+	bool (*renderCb)();
 
 	int currentFramebuffer;
 

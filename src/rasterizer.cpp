@@ -6,6 +6,7 @@
 
 #include <math.h>
 #include <ncurses.h>
+#include <thread>
 
 static Vector3 getBarryCentricCoordinates(int ptx, int pty, const Vector2& v1, const Vector2& v2, const Vector2& v3) {
 	Vector3 ret;
@@ -40,7 +41,7 @@ void Rasterizer::swapFramebuffers() {
 	pFrame = framebuffers[currentFramebuffer];
 }
 
-Rasterizer::Rasterizer(int width, int height): rFrame(nullptr), pFrame(nullptr), currentFramebuffer(0) {
+Rasterizer::Rasterizer(int width, int height): rFrame(nullptr), pFrame(nullptr), currentFramebuffer(0), renderCb(nullptr) {
 	initializeFramebuffer(width, height);
 }
 
@@ -78,10 +79,18 @@ void Rasterizer::rasterizeTriangle(const Vector2& vv1, const Vector2& vv2, const
 	}
 }
 
+void Rasterizer::setRenderCb(bool(*renderCb)()) {
+	this->renderCb = renderCb;
+}
+
 void Rasterizer::clearFrame() const {
 	rFrame->clear(0);
 }
 
 void Rasterizer::presentFrame() {
-	pFrame->print();
+	if (renderCb != nullptr) {
+		std::thread renderThread(renderCb);
+		pFrame->print();
+		renderThread.join();
+	}
 }
