@@ -6,7 +6,23 @@
 
 #include <math.h>
 #include <ncurses.h>
-#include <thread>
+
+bool renderStart, renderFinished, isProgramRunning;
+
+void renderThreadF(bool(**renderCb)()) {
+	while (isProgramRunning) {
+		if (renderStart) {
+			renderStart = false;
+			renderFinished = false;
+
+			if (*renderCb != nullptr) {
+				(*renderCb)();
+			}
+
+			renderFinished = true;
+		}
+	}
+}
 
 static Vector3 getBarryCentricCoordinates(int ptx, int pty, const Vector2& v1, const Vector2& v2, const Vector2& v3) {
 	Vector3 ret;
@@ -42,7 +58,11 @@ void Rasterizer::swapFramebuffers() {
 }
 
 Rasterizer::Rasterizer(int width, int height): rFrame(nullptr), pFrame(nullptr), currentFramebuffer(0), renderCb(nullptr) {
+	isProgramRunning = true;
+	renderStart = false;
+	renderFinished = false;
 	initializeFramebuffer(width, height);
+	renderThread = std::thread(renderThreadF, &renderCb);
 }
 
 Rasterizer::~Rasterizer() {
@@ -88,9 +108,8 @@ void Rasterizer::clearFrame() const {
 }
 
 void Rasterizer::presentFrame() {
-	if (renderCb != nullptr) {
-		std::thread renderThread(renderCb);
-		pFrame->print();
-		renderThread.join();
-	}
+	renderStart = true;
+
+	pFrame->print();
+	while (!renderFinished);
 }

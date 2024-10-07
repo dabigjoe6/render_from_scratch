@@ -16,7 +16,7 @@ bool renderCb() {
 	angle += 0.002f;
 
 	Matrix44 transformation;
-	transformation.rotate(Vector3(1, 0, 0), angle);
+	transformation.rotate(Vector3(0, 0, 1), angle);
 
 	Vector4 v1 = Vector4(-1, 1, 0, 1);
 	Vector4 v2 = Vector4(1, 1, 0, 1);

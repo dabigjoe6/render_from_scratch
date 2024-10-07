@@ -1,6 +1,8 @@
 #ifndef INCLUDE_RASTERIZER_HPP
 #define INCLUDE_RASTERIZER_HPP
 
+#include <thread>
+
 class Vector2;
 class Framebuffer;
 
@@ -28,5 +30,7 @@ private:
 	int currentFramebuffer;
 
 	void initializeFramebuffer(int width, int height);
+
+	std::thread renderThread;
 };
 #endif
